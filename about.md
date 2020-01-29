@@ -4,15 +4,16 @@ title: About
 permalink: /about/
 ---
 
-while(1){
-  makeBug();
-  findBug();
-  fixBug();
-}
+while(1){  
+>makeBug();  
+findBug();  
+fixBug(); 
+
+}  
 
 ### More Information
 
-sometimes post blog
+sometimes post blog  
 
 
 ### Contact me
