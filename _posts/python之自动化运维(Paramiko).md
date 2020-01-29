@@ -87,7 +87,7 @@ paramiko包含两个核心组件：SSHClient和SFTPClient。
 |Session|是client与Server保持连接的对象，用connect()/start_client()/start_server()开始会话|
 
 ### SSHClient常用的方法介绍
-**connect()**：实现远程服务器的连接与认证，对于该方法只有hostname是必传参数。
+**connect()** ：实现远程服务器的连接与认证，对于该方法只有hostname是必传参数。
 |参数|说明|
 |--|--|
 |hostname|连接的目标主机|
@@ -100,7 +100,7 @@ paramiko包含两个核心组件：SSHClient和SFTPClient。
 |allow_agent=True|是否允许连接到ssh代理，默认为True 允许
 |look_for_keys=True| 是否在~/.ssh中搜索私钥文件，默认为True 允许
 |compress=False|是否打开压缩
-**set_missing_host_key_policy()**：设置远程服务器没有在know_hosts文件中记录时的应对策略。传入MissingHostKeyPolicy的子类，目前支持三种策略：
+**set_missing_host_key_policy()** ：设置远程服务器没有在know_hosts文件中记录时的应对策略。传入MissingHostKeyPolicy的子类，目前支持三种策略：
 设置连接的远程主机没有本地主机密钥或HostKeys对象时的策略，目前支持三种：
 |MissingHostKeyPolicy的子类|说明|
 |--|--|
@@ -108,12 +108,12 @@ paramiko包含两个核心组件：SSHClient和SFTPClient。
 |WarningPolicy |用于记录一个未知的主机密钥的python警告。并接受，功能上和AutoAddPolicy类似，但是会提示是新连接|
 |RejectPolicy |自动拒绝未知的主机名和密钥，依赖load_system_host_key的配置。此为默认选项|
 
-**exec_command()**：在远程服务器执行Linux命令的方法。
+**exec_command()** ：在远程服务器执行Linux命令的方法。
 
-**open_sftp()**：在当前ssh会话的基础上创建一个sftp会话。该方法会返回一个SFTPClient对象。
+**open_sftp()** ：在当前ssh会话的基础上创建一个sftp会话。该方法会返回一个SFTPClient对象。
 
 ### SFTPClient常用方法介绍
-**from_transport(cls,t)**：创建一个已连通的SFTP客户端通道
+**from_transport(cls,t)** ：创建一个已连通的SFTP客户端通道
 **put(localpath, remotepath, callback=None, confirm=True)** ：将本地文件上传到服务器 参数confirm：是否调用stat()方法检查文件状态，返回ls -l的结果
 **get(remotepath, localpath, callback=None)** ：从服务器下载文件到本地
 **mkdir()** ：在服务器上创建目录
