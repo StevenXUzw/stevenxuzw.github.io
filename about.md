@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
+```java
 while(1){  
->makeBug();  
+makeBug();  
 findBug();  
 fixBug(); 
-
-}  
+}
+```
 
 ### More Information
 
