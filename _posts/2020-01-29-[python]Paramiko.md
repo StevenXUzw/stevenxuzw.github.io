@@ -89,6 +89,7 @@ paramiko包含两个核心组件：SSHClient和SFTPClient。
 
 ### SSHClient常用的方法介绍
 **connect()** ：实现远程服务器的连接与认证，对于该方法只有hostname是必传参数。
+
 |参数|说明|
 |--|--|
 |hostname|连接的目标主机|
@@ -101,6 +102,7 @@ paramiko包含两个核心组件：SSHClient和SFTPClient。
 |allow_agent=True|是否允许连接到ssh代理，默认为True 允许|
 |look_for_keys=True| 是否在~/.ssh中搜索私钥文件，默认为True 允许|
 |compress=False|是否打开压缩|
+
 **set_missing_host_key_policy()** ：设置远程服务器没有在know_hosts文件中记录时的应对策略。传入MissingHostKeyPolicy的子类，目前支持三种策略：
 设置连接的远程主机没有本地主机密钥或HostKeys对象时的策略，目前支持三种：
 |MissingHostKeyPolicy的子类|说明|
