@@ -1,6 +1,6 @@
 ---
-layout: title
-python操作Jinkins
+layout: post
+title: python操作Jinkins
 ---
 
 > Jenkins不仅有web界面交互，也提供了RestAPI的方式来使用代码（Python、Java）控制Jenkins的工作流;
