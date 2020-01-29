@@ -2,6 +2,7 @@
 layout: post
 title: python之自动化运维(Paramiko)
 ---
+
 ## 简介
 使用开源的Paramiko，我们就可以用Python代码中通过SSH协议对远程服务器执行操作，不需要手敲ssh命令，从而实现自动化运维。
 ssh是一个协议，OpenSSH是其中一个开源实现，paramiko库，实现了SSHv2协议(底层使用cryptography)。
@@ -91,15 +92,15 @@ paramiko包含两个核心组件：SSHClient和SFTPClient。
 |参数|说明|
 |--|--|
 |hostname|连接的目标主机|
-|port=SSH_PORT| 指定端口
-|username=None| 验证的用户名
-|password=None| 验证的用户密码
-|pkey=None| 私钥方式用于身份验证
-|key_filename=None| 一个文件名或文件列表，指定私钥文件
-|timeout=None| 可选的tcp连接超时时间
-|allow_agent=True|是否允许连接到ssh代理，默认为True 允许
-|look_for_keys=True| 是否在~/.ssh中搜索私钥文件，默认为True 允许
-|compress=False|是否打开压缩
+|port=SSH_PORT| 指定端口|
+|username=None| 验证的用户名|
+|password=None| 验证的用户密码|
+|pkey=None| 私钥方式用于身份验证|
+|key_filename=None| 一个文件名或文件列表，指定私钥文件|
+|timeout=None| 可选的tcp连接超时时间|
+|allow_agent=True|是否允许连接到ssh代理，默认为True 允许|
+|look_for_keys=True| 是否在~/.ssh中搜索私钥文件，默认为True 允许|
+|compress=False|是否打开压缩|
 **set_missing_host_key_policy()** ：设置远程服务器没有在know_hosts文件中记录时的应对策略。传入MissingHostKeyPolicy的子类，目前支持三种策略：
 设置连接的远程主机没有本地主机密钥或HostKeys对象时的策略，目前支持三种：
 |MissingHostKeyPolicy的子类|说明|
