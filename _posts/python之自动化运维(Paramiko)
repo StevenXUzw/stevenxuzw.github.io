@@ -1,3 +1,7 @@
+---
+layout: post
+title: python之自动化运维(Paramiko)
+---
 ## 简介
 使用开源的Paramiko，我们就可以用Python代码中通过SSH协议对远程服务器执行操作，不需要手敲ssh命令，从而实现自动化运维。
 ssh是一个协议，OpenSSH是其中一个开源实现，paramiko库，实现了SSHv2协议(底层使用cryptography)。
