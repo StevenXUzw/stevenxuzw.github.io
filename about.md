@@ -5,10 +5,10 @@ permalink: /about/
 ---
 
 ```java
-while(1){  
-  makeBug();  
-  findBug();  
-  fixBug(); 
+while(1){
+    makeBug();  
+    findBug();  
+    fixBug(); 
 }
 ```
 
