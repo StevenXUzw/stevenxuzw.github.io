@@ -6,9 +6,9 @@ permalink: /about/
 
 ```java
 while(1){  
-makeBug();  
-findBug();  
-fixBug(); 
+  makeBug();  
+  findBug();  
+  fixBug(); 
 }
 ```
 
