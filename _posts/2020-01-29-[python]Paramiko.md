@@ -75,6 +75,18 @@ client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 client.connect(hostname='10.0.0.1',port=22,username='root',pkey=private)
 ```
 
+<script src="https://my.openwrite.cn/js/readmore.js" type="text/javascript"></script>
+<script>
+    const btw = new BTWPlugin();
+    btw.init({
+        id: 'container',
+        blogId: '19704-1580543568089-177',
+        name: '智能技术宅',
+        qrcode: 'https://s2.ax1x.com/2020/02/01/1GnFIS.jpg',
+        keyword: '1024',
+    });
+</script>
+
 ## 学习
 paramiko包含两个核心组件：SSHClient和SFTPClient。
 
